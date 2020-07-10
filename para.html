@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdminBoard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand pl-5 ml-5" href="#">Adminboard</a>
+
+        <button class="navbar-toggler" data-target="#navtarget" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtarget">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="posts.html" class="nav-link">Posts</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Categories.html" class="nav-link">Categories</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Utilisateurs.html" class="nav-link">Utilisateurs</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto pr-5">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdrownmenu" data-toggle="dropdown"><i class="fa fa-user"></i>Bienvenue Hassiatou</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user-circle"></i>Profile</a>
+                        <a class="dropdown-item" href="para.html"><i class="fa fa-cog"></i>Parametres</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="logout/index.html" class="nav-link"><i class="fa fa-user-times pr-1"></i>Logout</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="pt-5 important mt-2 bg-primary p-2">
+        <div class="container">
+            <h1 class="warn text-white"><i class="fa fa-cog"></i>Dashboard</h1>
+        </div>
+    </div>
+    <div class=" bg-light p-3">
+        <div class="container p-2">
+
+            <div class="row mr-3">
+                <div class="col-3 text-dark">
+                    <button type="button" class="btn btn-basic w-100"><i class="fa fa-arrow-left pr-1"></i><a href="../index.html">Back To Dashboard</a></button>
+                </div>
+                
+                <div class="col-3 w-100"></div>
+
+                <div class="col-3">
+                </div>
+
+                <div class="col-3">
+                    <button type="button" class="btn btn-success w-100"><i class="fa fa-check pr-1"></i>Save Changes</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>Edit Settings</h4>
+            </div>
+            <div class="card-body">
+                <h3 class="font-weight-light">Allow User Registrations</h3>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="allow" id="allow">
+                    <label for="allow">Yes</label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="allow" id="allow">
+                    <label for="allow">No</label>
+                </div>
+
+                <h3 class="font-weight-light pt-4">Homepage Format</h3>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="lowa" id="lowa">
+                    <label for="lowa">Post Index</label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="lowa" id="lowa">
+                    <label for="lowa">Single Page</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="jombotrom footer mt-5  bg-info p-2 text-light">
+        <div class="container-fluid footerPage text-center">
+            <p>Copyright 2020 @AdminBoard</p>
+        </div>
+      </footer>
+      
+      
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      
+      
+      </body>
+      </html>

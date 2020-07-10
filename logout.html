@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdminBoard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand pl-5 ml-5" href="#">Adminboard</a>
+
+        <button class="navbar-toggler" data-target="#navtarget" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtarget">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="posts.html" class="nav-link">Posts</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Categories.html" class="nav-link">Categories</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Utilisateurs.html" class="nav-link">Utilisateurs</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto pr-5">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdrownmenu" data-toggle="dropdown"><i class="fa fa-user"></i>Bienvenue Hassiatou</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>Profile</a>
+                        <a class="dropdown-item" href="para.html"><i class="fa fa-cog"></i>Parametres</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="logout/index.html" class="nav-link"><i class="fa fa-user-times pr-1"></i>Logout</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="pt-5 important mt-2 bg-primary p-2">
+        <div class="container text-light">
+            <h1 class="warn"><i class="fa fa-user pr-2" aria-hidden="true"></i>Adminboard</h1>
+        </div>
+    </div>
+    <div class="container justify-content-center p-5">
+			
+        <div class="d-flex justify-content-center">
+            <div class="card" style="width: 30rem;">
+                <div class="card-header">
+                    <h4>Connexion</h4>
+                </div>
+                <div class="card-body">
+                    <div class="group-form">
+                        <label for="mail">Email</label>
+                        <input type="email" class="form-control" id="mail" name="mail">
+                    </div>
+                    
+                    <div class="group-form pt-3 pb-3">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" id="pass" name="pass">
+                    </div>
+
+                    <div class="group-form">
+                        <a href="../index.html" type="button" class="form-control btn btn-primary">Login</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="jombotrom footer mt-5  bg-info p-2 text-light">
+        <div class="container-fluid footerPage text-center">
+            <p>Copyright 2020 @AdminBoard</p>
+        </div>
+      </footer>
+      
+      
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

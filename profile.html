@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdminBoard</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand pl-5 ml-5" href="#">Adminboard</a>
+
+        <button class="navbar-toggler" data-target="#navtarget" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navtarget">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="posts.html" class="nav-link">Posts</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="Categories.html" class="nav-link">Categories</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="utilisateurs.html" class="nav-link">Utilisateurs</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto pr-5">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdrownmenu" data-toggle="dropdown"><i class="fa fa-user"></i>Bienvenue Hassiatou</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html"><i class="fa fa-user-circle"></i>Profile</a>
+                        <a class="dropdown-item" href="para.html"><i class="fa fa-cog"></i>Parametres</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="logout/index.html" class="nav-link"><i class="fa fa-user-times pr-1"></i>Logout</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="pt-5 important mt-2 bg-primary p-2">
+        <div class="container text-white">
+            <h1 class="warn"><i class="fa fa-user pr-2"></i>Edit Profile</h1>
+        </div>
+    </div>
+
+    <div class=" bg-light p-3">
+        <div class="container p-2">
+
+            <div class="row mr-3">
+                <div class="col-md-3 col-sm-12">
+                    <button type="button" class="btn btn-basic w-100"><i class="fa fa-arrow-left pr-1"></i><a href="../index.html">Back To Dashboard</a></button>
+                </div>
+                
+                <div class="col-md-3 col-sm-12 w-100"></div>
+
+                <div class="col-md-3 col-sm-12">
+                    <button type="button" class="btn btn-success w-100" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-lock text-white pr-1"></i>Change Password</button>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <button type="button" class="btn btn-danger w-100"><i class="fa fa-times pr-1"></i>Delete Account</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div class="card">
+                <div class="card-header">
+                    <h4>Edit Post</h4>
+                </div>
+                  <div class="card-body">
+
+                        <form action="post">
+                            <div class="form-group">
+                                <label for="title">Name</label>
+                                <input type="name" class="form-control" id="Title" placeholder="Daouda Hassiatou">
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">Email</label>
+                                <input type="name" class="form-control" id="mail" placeholder="dhassiatou26@gmail.com">
+                            </div>
+                        </form>
+
+                        <div class="pt-2">
+                            <p>Bio</p>
+                            <div id="editor" >
+                            </div>
+                        </div>
+                               
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 justify-content-sm-center">
+                <h3>Your profile</h3>
+                <img src="200.png" height="300px" alt="profile">
+
+                <div class="pb-3 pt-2">
+                    <button type="button" class="btn btn-primary" style="width: 310px;">Edit Image</button>
+                </div>
+                
+                <div>
+                    <button type="button" class="btn btn-danger" style="width: 310px;">Delete Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- premier modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="exampleModalLabel">Ajouter une Categorie</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+
+                      <div class="form-group">
+                        <label for="pass" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" id="pass">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="passw" class="col-form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="passw">
+                      </div>
+                    </form>
+                       <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+<footer class="jombotrom footer mt-5  bg-info p-2 text-light">
+    <div class="container-fluid footerPage text-center">
+        <p>Copyright 2020 @AdminBoard</p>
+    </div>
+  </footer>
+  
+  
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+      <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( err => {
+                console.error( err.stack );
+            } );
+    </script>
+  
+  </body>
+  </html>
